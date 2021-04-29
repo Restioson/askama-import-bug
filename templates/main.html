@@ -1,0 +1,9 @@
+{%- import "first_imported.html" as first -%}
+{%- import "second_imported.html" as second -%}
+
+<html>
+    <body>
+        <p>{%- call first::hello() -%}</p>
+        <p>{%- call second::hello() -%}</p>
+    </body>
+</html>
